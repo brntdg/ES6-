@@ -2,12 +2,14 @@ function addEndereco(endereco) {
 	const { cidade, estado } = endereco;
 
 	const novoEndereco = {
-		cidade:endereco.cidade,
-		estado:endereco.estado,
+		cidade,
+		estado,
 		pais:'Brazil'
 	}
 
-	console.log(novoEndereco.cidade+" "+novoEndereco.estado+" "+novoEndereco.pais);
+	const { pais } = novoEndereco;
+
+	console.log(`${cidade}, ${estado}, ${pais}`);
 }
 
 addEndereco({cidade:'Santo André', estado:'São Paulo'});
