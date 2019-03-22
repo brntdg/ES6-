@@ -1,4 +1,6 @@
 function addEndereco(endereco) {
+	const { cidade, estado } = endereco;
+
 	const novoEndereco = {
 		cidade:endereco.cidade,
 		estado:endereco.estado,
