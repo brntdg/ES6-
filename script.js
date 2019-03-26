@@ -1,15 +1,3 @@
-let addEndereco = (endereco) => {
-	const { cidade, estado } = endereco;
+import { somar } from './matematica.js';
 
-	const novoEndereco = {
-		cidade,
-		estado,
-		pais:'Brazil'
-	}
-
-	const { pais } = novoEndereco;
-
-	console.log(`${cidade}, ${estado}, ${pais}`);
-}
-
-addEndereco({cidade:'Santo André', estado:'São Paulo'});
+console.log(somar(5,5));
