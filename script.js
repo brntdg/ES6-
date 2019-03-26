@@ -1,4 +1,4 @@
-function addEndereco(endereco) {
+let addEndereco = (endereco) => {
 	const { cidade, estado } = endereco;
 
 	const novoEndereco = {
