@@ -1,3 +1,5 @@
-import { somar } from './matematica.js';
+import { Gato } from './animal.js';
 
-console.log(somar(5,5));
+let gato = new Gato('Preto', 4);
+
+console.log(gato.falar());
