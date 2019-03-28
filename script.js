@@ -1,5 +1,14 @@
-import { Gato } from './animal.js';
+async function requisitar() {
+	const url = 'https://alunos.b7web.com.br/api/ping';
 
-let gato = new Gato('Preto', 4);
+	const r = await fetch(url);
+	const json = await r.json();
 
-console.log(gato.falar());
+	console.log(json);
+
+	console.log("alguma coisa");
+
+
+}
+
+requisitar();
